@@ -3,7 +3,7 @@
 This scaffold is based on the Simple World-Building example system, adapted for SR4E architecture.
 
 ```text
-sr4e-nodezero-system/
+sr4e-nodezero/
 ├── system.json
 ├── template.json
 ├── lang/
