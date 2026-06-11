@@ -1,0 +1,225 @@
+{
+  "id": "sr4e-nodezero",
+  "title": "Shadowrun 4E - Node Zero",
+  "description": "A Shadowrun 4E Foundry VTT system for Physical, Matrix, Astral, Rigging, Chummer import, and extensible item-based modifiers. This system ships without copyrighted Shadowrun content.",
+  "authors": [
+    {
+      "name": "Node Zero Studios"
+    }
+  ],
+  "url": "",
+  "version": "0.1.2",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.363",
+    "maximum": "14"
+  },
+  "documentTypes": {
+    "Actor": {
+      "character": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "npc": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "spirit": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "critter": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "drone": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "vehicle": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "host": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "ic": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "agent": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      }
+    },
+    "Item": {
+      "skill": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "quality": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "weapon": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "weaponAttachment": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "armor": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "gear": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "cyberware": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "bioware": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "spell": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "complexForm": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "program": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "autosoft": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "vehicleModification": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "droneModification": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "contact": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "lifestyle": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "action": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "matrixAction": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "icAction": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      },
+      "modifier": {
+        "htmlField": [
+          "description.value",
+          "notes.value"
+        ]
+      }
+    }
+  },
+  "scripts": [],
+  "esmodules": [
+    "module/sr4e.js"
+  ],
+  "styles": [
+    "styles/sr4e.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [],
+  "packFolders": [],
+  "relationships": [],
+  "socket": true,
+  "manifest": "",
+  "download": "",
+  "protected": false,
+  "initiative": "@initiative.current.base.value + @initiative.current.dice.value - @wounds.value",
+  "grid": {
+    "distance": 1,
+    "units": "m"
+  },
+  "primaryTokenAttribute": "condition.physical",
+  "secondaryTokenAttribute": "condition.stun"
+}
