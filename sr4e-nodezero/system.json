@@ -2,6 +2,7 @@
   "id": "sr4e-nodezero",
   "title": "Shadowrun 4E - Node Zero",
   "description": "A Shadowrun 4E Foundry VTT system scaffold with Physical, Matrix, Astral, Rigging, Chummer import, and extensible modifiers.",
+  "url": "https://github.com/aspletg/s4/sr4e-nodezero/",
   "version": "0.1.1",
   "authors": [
     {
@@ -10,7 +11,7 @@
   ],
   "compatibility": {
     "minimum": "12",
-    "verified": "12"
+    "verified": "14"
   },
   "esmodules": [
     "module/sr4e.js"
@@ -181,5 +182,8 @@
         ]
       }
     }
-  }
+  },
+  "manifest": "https://github.com/aspletg/s4/sr4e-nodezero/system.json",
+  "download": "https://github.com/aspletg/s4/sr4e-nodezero/s4.zip",
+  "protected": false
 }
