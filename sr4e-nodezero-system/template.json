@@ -1,0 +1,122 @@
+{
+  "Actor": {
+    "types": ["character", "npc", "spirit", "critter", "drone", "vehicle", "host", "ic", "agent"],
+    "htmlFields": ["description", "biography", "notes"],
+    "templates": {
+      "entity": {
+        "entityId": "",
+        "domains": {
+          "physical": true,
+          "matrix": false,
+          "astral": false
+        },
+        "representations": [],
+        "links": [],
+        "source": {
+          "origin": "manual",
+          "chummerId": null,
+          "importedAt": null
+        }
+      },
+      "condition": {
+        "condition": {
+          "physical": { "value": 0, "max": 10 },
+          "stun": { "value": 0, "max": 10 }
+        }
+      },
+      "device": {
+        "device": {
+          "pilot": 0,
+          "response": 0,
+          "signal": 0,
+          "system": 0,
+          "firewall": 0,
+          "sensor": 0
+        },
+        "control": {
+          "state": "autonomous",
+          "controllerEntityId": null,
+          "initiativeSource": "pilot"
+        }
+      }
+    },
+    "character": {
+      "templates": ["entity", "condition"],
+      "attributes": {
+        "body": { "value": 1, "augmented": 1 },
+        "agility": { "value": 1, "augmented": 1 },
+        "reaction": { "value": 1, "augmented": 1 },
+        "strength": { "value": 1, "augmented": 1 },
+        "charisma": { "value": 1, "augmented": 1 },
+        "intuition": { "value": 1, "augmented": 1 },
+        "logic": { "value": 1, "augmented": 1 },
+        "willpower": { "value": 1, "augmented": 1 },
+        "edge": { "value": 1, "current": 1 },
+        "magic": { "value": 0 },
+        "resonance": { "value": 0 },
+        "essence": { "value": 6 }
+      },
+      "initiative": {
+        "physical": { "base": 0, "passes": 1 },
+        "matrixCold": { "base": 0, "passes": 0 },
+        "matrixHot": { "base": 0, "passes": 0 },
+        "astral": { "base": 0, "passes": 0 }
+      },
+      "karma": { "current": 0, "total": 0 },
+      "nuyen": 0,
+      "biography": "",
+      "notes": ""
+    },
+    "npc": { "templates": ["entity", "condition"] },
+    "spirit": { "templates": ["entity", "condition"] },
+    "critter": { "templates": ["entity", "condition"] },
+    "drone": { "templates": ["entity", "condition", "device"] },
+    "vehicle": {
+      "templates": ["entity", "condition", "device"],
+      "vehicle": {
+        "handling": 0,
+        "acceleration": "0/0",
+        "speed": 0,
+        "body": 0,
+        "armor": 0
+      }
+    },
+    "host": { "templates": ["entity", "device"] },
+    "ic": { "templates": ["entity", "device"] },
+    "agent": { "templates": ["entity", "device"] }
+  },
+  "Item": {
+    "types": ["skill", "quality", "weapon", "weaponAttachment", "armor", "gear", "cyberware", "bioware", "spell", "complexForm", "program", "autosoft", "vehicleModification", "droneModification", "contact", "lifestyle"],
+    "htmlFields": ["description", "notes"],
+    "templates": {
+      "baseItem": {
+        "description": "",
+        "notes": "",
+        "modifiers": [],
+        "effects": [],
+        "requirements": [],
+        "source": {
+          "origin": "manual",
+          "chummerId": null,
+          "importedAt": null
+        }
+      }
+    },
+    "skill": { "templates": ["baseItem"], "attribute": "", "rating": 0, "specializations": [], "defaultable": true },
+    "quality": { "templates": ["baseItem"], "karmaCost": 0 },
+    "weapon": { "templates": ["baseItem"], "damage": "", "ap": 0, "mode": [], "attachments": [] },
+    "weaponAttachment": { "templates": ["baseItem"], "capacityCost": 0, "slot": "" },
+    "armor": { "templates": ["baseItem"], "ballistic": 0, "impact": 0, "capacity": 0 },
+    "gear": { "templates": ["baseItem"], "rating": 0, "quantity": 1 },
+    "cyberware": { "templates": ["baseItem"], "rating": 0, "essence": 0, "capacity": 0, "grade": "standard" },
+    "bioware": { "templates": ["baseItem"], "rating": 0, "essence": 0, "grade": "standard" },
+    "spell": { "templates": ["baseItem"], "category": "", "drain": "", "range": "", "duration": "" },
+    "complexForm": { "templates": ["baseItem"], "rating": 0 },
+    "program": { "templates": ["baseItem"], "rating": 0, "programType": "" },
+    "autosoft": { "templates": ["baseItem"], "rating": 0, "appliesTo": "" },
+    "vehicleModification": { "templates": ["baseItem"], "slots": 0 },
+    "droneModification": { "templates": ["baseItem"], "slots": 0 },
+    "contact": { "templates": ["baseItem"], "connection": 1, "loyalty": 1 },
+    "lifestyle": { "templates": ["baseItem"], "monthlyCost": 0 }
+  }
+}
